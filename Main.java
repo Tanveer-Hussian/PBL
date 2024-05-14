@@ -420,40 +420,41 @@ public class Main {
 
 
 // Problem 1: How to find out which countries were providing best life expectancy during year 1962 and 1964.
-//        System.out.println("________________ Find Countries that Providing Best LifeExpectancy in the camparision of two years______________ ");
-//        Scanner inputYear = new Scanner(System.in);
-//        System.out.println("Enter year1 (From 1960 to 2020) : ");
-//        int year1= inputYear.nextInt();
-//        if(year1<1960 || year1>2020){
-//            System.out.println("Wrong input.....");
-//        }
-//        System.out.println("Enter year2 (From 1960 to 2020): ");
-//        int year2= inputYear.nextInt();
-//        if(year2<1960 || year2>2020){
-//            System.out.println("Wrong input.....");
-//        }
-//        findHighestLifeExpectancyCountries(Queues,year1,year2);
-//        System.out.println();
-//        System.out.println("Problem 1---------------------- ends");
+       System.out.println("________________ Find Countries that Providing Best LifeExpectancy in the camparision of two years______________ ");
+       Scanner inputYear = new Scanner(System.in);
+       System.out.println("Enter year1 (From 1960 to 2020) : ");
+       int year1= inputYear.nextInt();
+       if(year1<1960 || year1>2020){
+           System.out.println("Wrong input.....");
+       }
+       System.out.println("Enter year2 (From 1960 to 2020): ");
+       int year2= inputYear.nextInt();
+       if(year2<1960 || year2>2020){
+           System.out.println("Wrong input.....");
+       }
+       findHighestLifeExpectancyCountries(Queues,year1,year2);
+       System.out.println();
+       System.out.println("Problem 1---------------------- ends");
 //
 //         Problem 2: How to search and display life expectancy of a country in each year using Step 1.
-//        System.out.println("___________________ Search and Display the life expectancy of all years based on Code");
-//        Scanner code = new Scanner(System.in);
-//        System.out.println("Enter Code of the Country to be Display : ");
-//        String codeStr =code.nextLine();
-//        System.out.println("Life Expectancies for all Years (1960 to 2020) for the Country : " + codeStr);
-//        display_LifeExpectancy_By_CountryCode(hashTables,allYears,codeStr);
-//        System.out.println();
-//        System.out.println("Problem 2---------------------- ends");
+       System.out.println("___________________ Search and Display the life expectancy of all years based on Code");
+       Scanner code = new Scanner(System.in);
+       System.out.println("Enter Code of the Country to be Display : ");
+       String codeStr =code.nextLine();
+       System.out.println("Life Expectancies for all Years (1960 to 2020) for the Country : " + codeStr);
+       display_LifeExpectancy_By_CountryCode(hashTables,allYears,codeStr);
+       System.out.println();
+       System.out.println("Problem 2---------------------- ends");
 //
 //       Problem 3:   Which country is providing best, average and worst life expectancy (Use step 3 data structure).
-//        System.out.println("_____________Best , Average and Worst Life Expectancy for all countries of all years________________");
-//        stack.best_Average_Worst();
-//
+       System.out.println("_____________Best , Average and Worst Life Expectancy for all countries of all years________________");
+       stack.best_Average_Worst();
+
 //        //Postulate 1: Is it true that the countries whose name start with A are providing better life expectancy than
 //        //the rest of the countries.
         System.out.println(postulate(hashTables,allYears,allCountryCodes));
 
+        
 
     }
 }
